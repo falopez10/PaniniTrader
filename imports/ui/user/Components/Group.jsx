@@ -53,6 +53,7 @@ export class Group extends React.Component {
         return (
             <div>
                 <div className="container">
+                    <div className="card">
                     <h5> <strong> Name of the group: </strong>{this.props.name}</h5>
                     <br />
                     <h5> <strong>Location: </strong> {this.props.location} </h5>
@@ -68,6 +69,7 @@ export class Group extends React.Component {
                     }
                     <br />
                     <br />
+                    </div>
                 </div>
             </div>
         );
