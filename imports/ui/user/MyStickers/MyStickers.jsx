@@ -208,6 +208,9 @@ export default withRouter( withTracker(()=>{
         let sortOrder = {};
         let status = Session.get("Mystatus");
         
+        //El codigo que tienen actualmente no permite ordenar por los atributos.
+        //Propongo delegar esta tarea en el cliente, realizando el sort con 
+        //metodos de js(no de mongo) despues de obtener el find de la subscripción deseada.
         sortOrder[pOrder] = 1;
         if(sortOrder.DateAdded === 1){
             sortOrder[pOrder] = -1;
